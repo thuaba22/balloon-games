@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);

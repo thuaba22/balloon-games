@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { useContext, useRef, useState } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { getAuth, signOut } from "firebase/auth";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
